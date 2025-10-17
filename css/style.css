@@ -524,7 +524,7 @@ body {
     transition: 0.5s;
 }
 .background-img{
-    background-image: url('/img/och.png') !important;
+    background-image: url('../img/och.png') !important;
     background-size: cover !important;
     background-position: center !important;
 }
