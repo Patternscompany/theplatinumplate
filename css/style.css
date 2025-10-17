@@ -592,7 +592,7 @@ body {
 
   /* ===== Packages Section ===== */
 .packages {
-  background: url('/img/background-site.jpg');
+  background: url('../img/background-site.jpg');
   text-align: center;
 
 }
