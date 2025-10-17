@@ -224,40 +224,7 @@
     <!-- About End -->
 
     
-    <div
-      class="modal fade"
-      id="videoModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- 16:9 aspect ratio -->
-            <div class="ratio ratio-16x9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowfullscreen
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
     <!-- Fact End -->
 
 
@@ -438,6 +405,169 @@
     <!-- Menu End -->
 
 
+
+
+<div class="container py-6 packages">
+  <div class="text-center mb-5">
+    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Packages</small>
+    <h1 class="display-5">Choose Your Perfect Plan</h1>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+      <div class="package-item silver">
+        <h3>Silver Package</h3>
+        <p>Perfect for small gatherings and family events.</p>
+        <ul>
+          <li>Veg Menu</li>
+          <li>Basic Decoration</li>
+          <li>2 Beverages</li>
+          <li>Professional Staff</li>
+        </ul>
+        <h4>₹9,999</h4>
+        <a
+  href="javascript:void(0)"
+  class="btn btn-primary rounded-pill"
+  data-package="Silver Package"
+  data-amount="9999"
+>Book Now</a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="package-item gold">
+        <h3>Gold Package</h3>
+        <p>Ideal for weddings and corporate events.</p>
+        <ul>
+          <li>Veg & Non-Veg Menu</li>
+          <li>Premium Decoration</li>
+          <li>4 Beverages</li>
+          <li>Live Counters</li>
+        </ul>
+        <h4>₹19,999</h4>
+        <a
+  href="javascript:void(0)"
+  class="btn btn-primary rounded-pill"
+  data-package="Gold Package"
+  data-amount="19999"
+>Book Now</a>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="package-item platinum">
+        <h3>Platinum Package</h3>
+        <p>Luxury catering for grand celebrations.</p><br>
+        <ul>
+          <li>Multi-Cuisine Menu</li>
+          <li>Custom Theme Decoration</li>
+          <li>Unlimited Beverages</li>
+          <li>Luxury Setup & Service</li>
+        </ul>
+        <h4>₹29,999</h4>
+       <a
+  href="javascript:void(0)"
+  class="btn btn-primary rounded-pill"
+  data-package="Platinum Package"
+  data-amount="29999"
+>Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Package Booking Modal -->
+<div
+  class="modal fade"
+  id="packageModal"
+  tabindex="-1"
+  aria-labelledby="packageModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content rounded-3 shadow">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title text-white" id="packageModalLabel">
+          <img src="img/platinum.png" class="pop-img" alt="">
+          Book Your Package</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="bookingForm">
+          <div class="mb-1">
+            <label for="name" class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="number" class="form-label">Phone Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="number"
+              placeholder="Enter your Number"
+              required
+            />
+          </div>
+
+          <div class="mb-1">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="mb-1">
+            <label for="packageName" class="form-label">Package Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="packageName"
+              readonly
+            />
+          </div>
+
+          <div class="mb-1">
+            <label for="amount" class="form-label">Amount (₹)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="amount"
+              readonly
+            />
+          </div>
+
+          <button type="submit" class="btn btn-warning w-100 rounded-pill">
+            Submit Booking
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+ 
+
+</style>
+
     <!-- Service Start -->
     <div class="container-fluid service py-6">
   <div class="container">
@@ -458,7 +588,7 @@
               <p class="mb-4">
                 Make your big day unforgettable with our luxurious wedding catering — crafted menus, elegant presentation, and flawless service.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -473,7 +603,7 @@
               <p class="mb-4">
                 From meetings to conferences, we provide professional catering that impresses clients and keeps your team energized.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -488,7 +618,7 @@
               <p class="mb-4">
                 Elevate your parties with our stylish cocktail catering — creative drinks, delicious bites, and a touch of class.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -503,7 +633,7 @@
               <p class="mb-4">
                 Perfect for offices, schools, and events — our fresh, hygienic, and balanced meal boxes make catering easy.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -518,7 +648,7 @@
               <p class="mb-4">
                 Host your special celebrations in style — birthdays, anniversaries, and parties with exquisite food and service.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -533,7 +663,7 @@
               <p class="mb-4">
                 Enjoy restaurant-quality food at home. We bring the kitchen to you with full-service home catering.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -548,7 +678,7 @@
               <p class="mb-4">
                 Fine dining brought to your venue — plated meals, elegant service, and a delightful experience for your guests.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -563,7 +693,7 @@
               <p class="mb-4">
                 Ideal for large gatherings — delicious multi-cuisine buffets with live counters and professional service.
               </p>
-              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+              
             </div>
           </div>
         </div>
@@ -1582,5 +1712,27 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bookButtons = document.querySelectorAll(".btn[data-package]");
+    const packageNameInput = document.getElementById("packageName");
+    const amountInput = document.getElementById("amount");
+
+    bookButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const packageName = btn.getAttribute("data-package");
+        const packageAmount = btn.getAttribute("data-amount");
+
+        packageNameInput.value = packageName;
+        amountInput.value = packageAmount;
+
+        const modal = new bootstrap.Modal(
+          document.getElementById("packageModal")
+        );
+        modal.show();
+      });
+    });
+  });
+</script>
   </body>
 </html>

@@ -199,11 +199,75 @@ body {
 
 /*** service start ***/
 .service .service-item {
-    position: relative;
-    height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  position: relative;
+  height: 100%;
+  border-radius: 25% 30% !important;
+  background: linear-gradient(145deg, #fffdf5, #fff);
+  box-shadow:
+    inset 0 0 25px #c79e09,
+    0 0 20px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
+
+/* Hover Effect */
+.service .service-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 0 30px #f1c40f;
+  background: linear-gradient(135deg, #fff7d1, #fffbe9);
+}
+
+/* Inner Content Animation */
+.service .service-content {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.service .service-item:hover .service-content {
+  transform: scale(1.05);
+}
+
+/* Icon Styling */
+.service .service-content-icon i {
+  font-size: 70px;
+  color: #c79e09;
+  transition: all 0.3s ease;
+}
+
+.service .service-item:hover .service-content-icon i {
+  color: #000;
+  transform: rotate(10deg) scale(1.1);
+  text-shadow: 0 0 15px #f4d03f;
+}
+
+/* Title & Button Animation */
+.service .service-content-icon h4 {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.service .service-content-icon p {
+  color: #666;
+}
+
+.service .service-content-icon a.btn {
+  background: linear-gradient(45deg, #c79e09, #000);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.service .service-content-icon a.btn:hover {
+  background: linear-gradient(45deg, #000, #c79e09);
+  box-shadow: 0 0 15px rgba(199, 158, 9, 0.7);
+  transform: scale(1.05);
+}
+
 
 /* .service-content::after {
     position: absolute;
@@ -492,3 +556,149 @@ body {
 
 
 
+ #packageModal .modal-content {
+  border: 2px solid #c79e09;
+  background: linear-gradient(145deg, #fff8e1, #ffffff);
+}
+
+#packageModal .btn-warning {
+  background: linear-gradient(45deg, #c79e09, #000);
+  color: #fff;
+  font-weight: 600;
+}
+
+#packageModal .btn-warning:hover {
+  background: linear-gradient(45deg, #000, #c79e09);
+}
+
+  /* ===== Packages Section ===== */
+.packages {
+  background: linear-gradient(135deg, #fffaf1, #fff);
+  text-align: center;
+}
+
+/* Common Card Styles */
+.package-item {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 25px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.package-item h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.package-item p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* List Items */
+.package-item ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.package-item ul li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+  color: #333;
+}
+
+/* Price */
+.package-item h4 {
+  font-size: 2rem;
+  color: #000;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+/* Buttons */
+.package-item a.btn {
+  background: linear-gradient(45deg, #c79e09, #000);
+  color: #fff;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+/* .package-item a.btn:hover {
+  background: linear-gradient(45deg, #000, #c79e09);
+  box-shadow: 0 0 15px rgba(199, 158, 9, 0.6);
+} */
+
+/* === Silver Package === */
+.package-item.silver {
+  border-color: #c0c0c0;
+  background: linear-gradient(145deg, #f7f7f7, #ffffff);
+}
+
+.package-item.silver h3 {
+  color: #b0b0b0;
+}
+
+/* === Gold Package === */
+.package-item.gold {
+  border-color: #d4af37;
+  background: linear-gradient(145deg, #fff4d2, #fff);
+}
+
+.package-item.gold h3 {
+  color: #c79e09;
+}
+
+.package-item.gold:hover {
+  box-shadow: 0 0 25px rgba(199, 158, 9, 0.6);
+}
+
+/* === Platinum Package === */
+.package-item.platinum {
+  border-color: #e5e4e2;
+  background: linear-gradient(145deg, #f3f3f3, #ffffff);
+}
+
+.package-item.platinum h3 {
+  color: #555;
+}
+
+.package-item.platinum:hover {
+  box-shadow: 0 0 30px rgba(180, 180, 180, 0.5);
+}
+
+/* Hover Glow Effects */
+.package-item::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(199, 158, 9, 0.15), transparent 70%);
+  transform: scale(0);
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.package-item:hover::before {
+  transform: scale(1);
+}
+.pop-img{
+    width:50px; 
+    height: auto;
+    border-radius: 50%;
+}
