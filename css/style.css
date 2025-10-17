@@ -511,7 +511,11 @@ body {
 .team-item .team-content p {
     transition: 0.5s;
 }
-
+.background-img{
+    background-image: url('/img/och.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
 .team-item:hover .team-content h4 {
     color: var(--bs-dark) !important;
 }
@@ -551,6 +555,9 @@ body {
 .footer .footer-item a.text-body:hover {
     color: var(--bs-primary) !important;
 }
+.footer{
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
 /*** Footer End ***/
 
 
@@ -573,8 +580,9 @@ body {
 
   /* ===== Packages Section ===== */
 .packages {
-  background: linear-gradient(135deg, #fffaf1, #fff);
+  background: url('/img/background-site.jpg');
   text-align: center;
+
 }
 
 /* Common Card Styles */
