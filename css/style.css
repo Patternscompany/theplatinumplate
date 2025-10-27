@@ -751,3 +751,9 @@ height: 336px;
     height: auto;
     border-radius: 50%;
 }
+
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
