@@ -107,5 +107,54 @@
         }
     });
 
+    $(".apple-small-slider").owlCarousel({
+        loop: true,
+        margin: 24,
+        nav: false,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:1
+            },
+            992:{
+                items:1
+            }
+        }
+    });
+
+    $(".apple-large-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+        smartSpeed: 800
+    });
+
+    $(".blog-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        smartSpeed: 700
+    });
+
 })(jQuery);
 

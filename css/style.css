@@ -597,7 +597,7 @@ height: 336px;
     color: var(--bs-primary) !important;
 }
 .footer{
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 2px solid rgba(0, 0, 0, .1);
 }
 /*** Footer End ***/
 
