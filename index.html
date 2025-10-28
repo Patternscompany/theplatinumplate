@@ -1875,5 +1875,50 @@ setInterval(autoScroll, 20); // adjust speed (lower = faster)
   });
 </script>
 
+<!-- <script>
+  // Function to create falling flowers
+  function createFlower() {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+    flower.textContent = '🍂'; // You can use 🌼 🌺 🌻 🌹 etc.
+
+    // Random horizontal position
+    flower.style.left = Math.random() * window.innerWidth + 'px';
+    // Random size for variation
+    flower.style.fontSize = 15 + Math.random() * 15 + 'px';
+    // Random animation duration (speed)
+    flower.style.animationDuration = 4 + Math.random() * 4 + 's';
+
+    document.body.appendChild(flower);
+
+    // Remove the flower after animation ends
+    setTimeout(() => {
+      flower.remove();
+    }, 8000);
+  }
+
+  // Generate flowers continuously
+  setInterval(createFlower, 300);
+</script> -->
+<script>
+  function createFlower() {
+    const flower = document.createElement('img');
+    flower.classList.add('flower');
+    flower.src = 'img/mg.png'; // 👉 Replace with your image path
+    flower.style.left = Math.random() * window.innerWidth + 'px';
+    flower.style.width = 15 + Math.random() * 80 + 'px'; // size variation
+    flower.style.animationDuration = 4 + Math.random() * 4 + 's';
+
+    document.body.appendChild(flower);
+
+    setTimeout(() => {
+      flower.remove();
+    }, 8000);
+  }
+
+  setInterval(createFlower, 300);
+</script>
+
+
   </body>
 </html>

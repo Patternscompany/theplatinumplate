@@ -766,3 +766,46 @@ body {
     display: flex;
     align-items: center;
 }
+
+
+
+
+
+/* Flower Falling Animation */
+/* .flower {
+  position: fixed;
+  top: 0;
+  font-size: 20px;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.8;
+} */
+
+/* Keyframe for falling animation */
+/* @keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+} */
+
+.flower {
+    position: fixed;
+    top: 0;
+    animation-name: fall;
+    animation-timing-function: linear;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
