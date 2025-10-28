@@ -537,22 +537,31 @@ body {
 .team-item .team-content p{
     font-size: 0.65rem;
 }
-.background-img{
-    background-image: url('../img/och.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    position: relative;
+.background-img {
+  position: relative; /* important for ::after to position correctly */
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  overflow: hidden; /* ensures overlay doesn’t leak outside */
 }
-.background-img::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-height: 336px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    z-index: 1; /* Ensure the overlay is behind the content */
+
+.background-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* makes it responsive on all screens */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
+
+/* Ensure inner content appears above the overlay */
+.background-img > * {
+  position: relative;
+  z-index: 2;
+}
+
 .background-img div{
     z-index: 5;
     position: relative;
