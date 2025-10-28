@@ -1702,6 +1702,94 @@
   </div>
 </div>
 
+<!-- Audio Tag -->
+<!-- Popup -->
+<div id="closePopup">
+  <div class="popup-content">
+    <img src="img/aboutt.jpg" alt="Close Popup">
+    <button id="closeBtn">×</button>
+  </div>
+</div>
+
+<!-- Audio -->
+<audio id="popupAudio" src="media/kabira-encore.mp3"></audio>
+
+<!-- Trigger button -->
+<button id="closeFormBtn">Open Popup</button>
+
+<style>
+  /* Popup Overlay */
+#closePopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Popup Box */
+.popup-content {
+  position: relative;
+}
+
+/* Image Styling */
+.popup-content img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+#closeBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: yellow;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#closeBtn:hover {
+  background: orange;
+}
+
+</style>
+
+
+<script>
+const closeFormBtn = document.getElementById('closeFormBtn');
+const popupAudio = document.getElementById('popupAudio');
+const closePopup = document.getElementById('closePopup');
+const closeBtn = document.getElementById('closeBtn');
+
+// Show popup when clicking the open button
+closeFormBtn.addEventListener('click', () => {
+  closePopup.style.display = 'flex';
+});
+
+// When clicking close button
+closeBtn.addEventListener('click', () => {
+  closePopup.style.display = 'none';
+  popupAudio.play();
+});
+</script>
+
+
+
 <!-- Smooth Auto Scroll JS -->
 <!-- <script>
 const slider = document.getElementById('appleSlider');
@@ -1906,17 +1994,17 @@ setInterval(autoScroll, 20); // adjust speed (lower = faster)
     flower.classList.add('flower');
     flower.src = 'img/mg.png'; // 👉 Replace with your image path
     flower.style.left = Math.random() * window.innerWidth + 'px';
-    flower.style.width = 15 + Math.random() * 80 + 'px'; // size variation
+    flower.style.width = 10 + Math.random() * 80 + 'px'; // size variation
     flower.style.animationDuration = 4 + Math.random() * 4 + 's';
 
     document.body.appendChild(flower);
 
     setTimeout(() => {
       flower.remove();
-    }, 8000);
+    }, 6000);
   }
 
-  setInterval(createFlower, 300);
+  setInterval(createFlower, 100);
 </script>
 
 
