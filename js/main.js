@@ -149,7 +149,9 @@
         margin: 30,
         nav: false,
         dots: true,
-        items: 1,
+          center: true,              // Center active item
+
+        items: 1.2,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,

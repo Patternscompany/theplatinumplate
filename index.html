@@ -1705,6 +1705,7 @@
 
 <!-- Audio Tag -->
 <!-- Popup -->
+<!-- Popup -->
 <div id="closePopup">
   <div class="popup-content">
     <img src="img/aboutt.jpg" alt="Close Popup">
@@ -1713,10 +1714,8 @@
 </div>
 
 <!-- Audio -->
-<audio id="popupAudio" src="media/kabira-encore.mp3" loop></audio>
+<audio id="popupAudio" src="media/kabira-encore.mp3"></audio>
 
-<!-- Trigger button -->
-<button id="closeFormBtn">Open Popup</button>
 
 <style>
   /* Popup Overlay */
@@ -1753,7 +1752,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background:#f5c518;;
+  background: yellow;
   color: white;
   border: none;
   border-radius: 50%;
@@ -1772,21 +1771,21 @@
 
 
 <script>
-const closeFormBtn = document.getElementById('closeFormBtn');
-const popupAudio = document.getElementById('popupAudio');
 const closePopup = document.getElementById('closePopup');
 const closeBtn = document.getElementById('closeBtn');
+const popupAudio = document.getElementById('popupAudio');
 
-// Show popup when clicking the open button
-closeFormBtn.addEventListener('click', () => {
+// Show popup automatically after page load
+window.addEventListener('load', () => {
   closePopup.style.display = 'flex';
 });
 
-// When clicking close button
+// When clicking close button, hide popup and play audio
 closeBtn.addEventListener('click', () => {
   closePopup.style.display = 'none';
   popupAudio.play();
 });
+
 </script>
 
 
