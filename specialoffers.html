@@ -222,223 +222,126 @@
         <!-- Modal Search End -->
 
 <!-- Header -->
-  <div class="container text-center py-5">
-    <h1 class="display-5 mb-4">Starters</h1>
-    <p class="text-muted">A perfect start to your dining experience.</p>
-  </div>
+  <div class="container text-center py-500 " style="padding-top: 120px;  margin-top: 80px;">
+  <h1 class="display-5 mb-4">Starters</h1>
+  <p class="text-muted">A perfect start to your dining experience.</p>
+</div>
+
 
   <!-- Starters Menu -->
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="Paneer Delight" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Paneer Delight</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Freshly spiced paneer served with a crispy garnish for a perfect start.</p>
-          </div>
-        </div>
-      </div>
+   <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="veg">Veg Starters</button>
+    <button class="tab-btn" data-tab="nonveg">Non-Veg Starters</button>
+  </div>
 
-      <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Veg Starters -->
+  <div id="veg" class="tab-content active">
+    <!-- <div class="container text-center py-5">
+      <h1 class="display-5 mb-4">Veg Starters</h1>
+      <p class="text-muted mb-5">A perfect start to your dining experience with delicious vegetarian delights.</p> -->
 
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="img/menu-01.jpg" alt="Paneer Tikka">
+          <div>
+            <h4>Paneer Tikka</h4>
+            <p>Grilled cottage cheese cubes marinated in spices.</p>
           </div>
+          <div class="menu-price">₹100</div>
         </div>
-      </div>
 
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
+        <div class="menu-item">
+          <img src="img/menu-02.jpg" alt="Veg Manchurian">
+          <div>
+            <h4>Veg Manchurian</h4>
+            <p>Fried vegetable balls tossed in tangy Manchurian sauce.</p>
           </div>
+          <div class="menu-price">₹120</div>
         </div>
-      </div>
 
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
+        <div class="menu-item">
+          <img src="img/menu-03.jpg" alt="Hara Bhara Kebab">
+          <div>
+            <h4>Hara Bhara Kebab</h4>
+            <p>Spinach and green peas kebabs served with mint chutney.</p>
           </div>
+          <div class="menu-price">₹90</div>
         </div>
-      </div>
 
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
+        <div class="menu-item">
+          <img src="img/menu-04.jpg" alt="Crispy Corn">
+          <div>
+            <h4>Crispy Corn</h4>
+            <p>Golden fried sweet corn with a spicy twist.</p>
           </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-lg-6">
-        <div class="menu-item d-flex align-items-center">
-          <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="Sweet Potato Bites" />
-          <div class="w-100 d-flex flex-column text-start ps-4">
-            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-              <h4>Sweet Potato Bites</h4>
-              <h4 class="text-primary">$90</h4>
-            </div>
-            <p class="mb-0">Crispy and lightly seasoned sweet potato, a tasty appetizer for all ages.</p>
-          </div>
+          <div class="menu-price">₹110</div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Non-Veg Starters -->
+  <div id="nonveg" class="tab-content">
+    <!-- <div class="container text-center py-5">
+      <h1 class="display-5 mb-4">Non-Veg Starters</h1>
+      <p class="text-muted mb-5">Savor our flavorful non-veg starters crafted to perfection.</p> -->
+
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="img/menu-05.jpg" alt="Chicken Tikka">
+          <div>
+            <h4>Chicken Tikka</h4>
+            <p>Tender chicken marinated in yogurt and spices, grilled to perfection.</p>
+          </div>
+          <div class="menu-price">₹150</div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/menu-06.jpg" alt="Fish Fingers">
+          <div>
+            <h4>Fish Fingers</h4>
+            <p>Crispy golden fish fingers served with a tangy tartar dip.</p>
+          </div>
+          <div class="menu-price">₹170</div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/menu-07.jpg" alt="Prawn Tempura">
+          <div>
+            <h4>Prawn Tempura</h4>
+            <p>Lightly battered prawns fried to a golden crunch.</p>
+          </div>
+          <div class="menu-price">₹200</div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/menu-08.jpg" alt="Mutton Seekh Kebab">
+          <div>
+            <h4>Mutton Seekh Kebab</h4>
+            <p>Juicy minced mutton kebabs grilled with aromatic spices.</p>
+          </div>
+          <div class="menu-price">₹180</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Switch Script -->
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        tabButtons.forEach((b) => b.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        btn.classList.add("active");
+        document.getElementById(btn.getAttribute("data-tab")).classList.add("active");
+      });
+    });
+  </script>
 
   <!-- Back to Main Menu Button -->
   <div class="text-center mt-5">
