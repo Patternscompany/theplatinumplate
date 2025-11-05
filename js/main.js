@@ -151,7 +151,7 @@
         dots: true,
           center: true,              // Center active item
 
-        items: 1.2,
+        items: 2,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
