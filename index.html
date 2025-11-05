@@ -407,6 +407,41 @@
 
     <!-- Menu End -->
 
+    <div style="padding:40px 0; background:#ffffff;">
+  <video 
+    src="img/pp3.mp4" 
+    autoplay 
+    loop 
+    muted 
+    playsinline 
+    preload="metadata"
+    style="
+      width:100%;
+      height:auto;
+      max-width:1000px;
+      display:block;
+      margin:0 auto;
+      border-radius:12px;
+      object-fit:cover;
+      background:#000;
+      box-shadow:0 8px 20px rgba(0,0,0,0.6);
+      aspect-ratio:16/9;
+    "
+  ></video>
+</div>
+
+<style>
+  /* Responsive tweak for mobile */
+  @media (max-width: 720px) {
+    video {
+      aspect-ratio: 4 / 3;   /* shorter on mobile */
+      max-height: 45vh;      /* limits height */
+      border-radius: 10px;
+    }
+  }
+</style>
+
+
 
 
       <!-- Service Start -->
@@ -706,10 +741,8 @@
 
 
 
-<style>
- 
 
-</style>
+
 
   
 
@@ -1581,7 +1614,7 @@
 .blog-image img:hover {
   transform: scale(1.05);
 }
-</style>
+</>
 
 <!-- Blog End -->
 
