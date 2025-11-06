@@ -829,7 +829,7 @@ body {
 
 .card-slider {
   display: flex;
-  width: fit-content;
+  white-space: nowrap;
   animation: slide 30s linear infinite;
 }
 
@@ -841,4 +841,12 @@ body {
     transform: translateX(-50%);
   }
 }
+
+/* ✅ Mobile Fix */
+@media (max-width: 768px) {
+  .card-slider {
+    animation: slide 20s linear infinite;
+  }
+}
+
 
