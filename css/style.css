@@ -850,3 +850,49 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ✅ Events 2×2 layout in mobile */
+@media (max-width: 576px) {
+  .event .col-md-6,
+  .event .col-lg-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* ✅ Tabs side-by-side in mobile */
+@media (max-width: 576px) {
+  .nav.nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav.nav-pills .nav-item {
+    width: 48%; /* 2 per row */
+    padding: 0 !important;
+  }
+
+  .nav.nav-pills .nav-item a {
+    width: 100%;
+    justify-content: center;
+  }
+}
