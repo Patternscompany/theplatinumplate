@@ -46,6 +46,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
   </head>
 
   <body>
@@ -316,7 +317,7 @@
         playsinline
         preload="metadata"
         style="
-          width: 100%;
+          width: 80%;
           height: auto;
 
           display: block;
@@ -1087,7 +1088,7 @@
             <div class="team-item rounded">
               <img
                 class="img-fluid rounded-top"
-                src="img/team-1.jpg"
+                src="img/chef1.png"
                 alt="Chef Rajesh"
               />
               <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -1101,7 +1102,7 @@
             <div class="team-item rounded">
               <img
                 class="img-fluid rounded-top"
-                src="img/team-2.jpg"
+                src="img/chef2.png"
                 alt="Chef Priya Sharma"
               />
               <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -1115,7 +1116,7 @@
             <div class="team-item rounded">
               <img
                 class="img-fluid rounded-top"
-                src="img/team-3.jpg"
+                src="img/chef3.png"
                 alt="Chef Arjun Reddy"
               />
               <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -1129,7 +1130,7 @@
             <div class="team-item rounded">
               <img
                 class="img-fluid rounded-top"
-                src="img/team-4.jpg"
+                src="img/chef4 (1).png"
                 alt="Chef Neha Patel"
               />
               <div class="team-content text-center py-3 bg-dark rounded-bottom">
@@ -1450,6 +1451,7 @@
     <!-- Blog End -->
 
     <!-- Apple-Style Slider -->
+     <div class="card-slider" id="slider">
     <div
       style="
         width: 100%;
@@ -1545,7 +1547,7 @@
           onmouseout="this.style.transform='scale(1)';"
         >
           <img
-            src="img/a3.webp"
+            src="img/sd2.jpeg"
             alt="Balatro+"
             style="
               width: 100%;
@@ -1590,7 +1592,7 @@
           onmouseout="this.style.transform='scale(1)';"
         >
           <img
-            src="img/a4.webp"
+            src="img/sd3.jpeg"
             alt="The Platinum Plate"
             style="
               width: 100%;
@@ -1635,7 +1637,7 @@
           onmouseout="this.style.transform='scale(1)';"
         >
           <img
-            src="img/a5.png"
+            src="img/sd4.jpeg"
             alt="The Platinum Plate"
             style="
               width: 100%;
@@ -1679,7 +1681,7 @@
           onmouseout="this.style.transform='scale(1)';"
         >
           <img
-            src="img/a1.webp"
+            src="img/sd5.jpeg"
             alt="The Platinum Plate"
             style="
               width: 100%;
@@ -1708,6 +1710,19 @@
         </div>
       </div>
     </div>
+    </div>
+    <script>
+  const slider = document.getElementById("slider");
+
+  slider.addEventListener("mouseover", () => {
+    slider.style.animationPlayState = "paused";
+  });
+
+  slider.addEventListener("mouseout", () => {
+    slider.style.animationPlayState = "running";
+  });
+</script>
+
 
     <!-- Audio Tag -->
     <!-- Popup -->

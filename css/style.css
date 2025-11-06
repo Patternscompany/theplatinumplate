@@ -809,3 +809,36 @@ body {
       opacity: 0;
     }
   }
+
+
+
+  /* .card-slider {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  width: fit-content;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
+.card-slider {
+  display: flex;
+  width: fit-content;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
