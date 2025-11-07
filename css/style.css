@@ -896,3 +896,14 @@ body {
     justify-content: center;
   }
 }
+
+/* ✅ Team 2×2 layout in mobile */
+@media (max-width: 576px) {
+  .team .col-md-6 {
+    width: 50%;
+  }
+}
+
+
+
+/* blog */

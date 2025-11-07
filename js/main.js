@@ -145,18 +145,29 @@
     });
 
     $(".blog-slider").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        dots: true,
-          center: true,              // Center active item
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: true,
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 700,
 
-        items: 2,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        smartSpeed: 700
-    });
+    // ✅ RESPONSIVE FIX
+    responsive: {
+        0: {
+            items: 1,        // ✅ Mobile: one slide at a time
+            center: false    // ✅ Remove center to avoid cut display
+        },
+        768: {
+            items: 2,
+            center: true
+        }
+    }
+});
+
 
 })(jQuery);
 
