@@ -46,6 +46,63 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .apple-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+}
+
+.apple-track {
+  display: flex;
+  animation: slide 25s linear infinite;
+}
+
+.apple-card {
+  flex: 0 0 350px;
+  height: 180px;
+  margin: 0 10px;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.apple-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.apple-card span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.apple-card:hover {
+  transform: scale(1.04);
+}
+
+/* ✅ Mobile Responsive */
+@media(max-width: 600px) {
+  .apple-card {
+    flex: 0 0 230px;
+    height: 150px;
+  }
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+      </style>
     
   </head>
 
@@ -1449,279 +1506,43 @@
     </style>
 
     <!-- Blog End -->
+<!-- apple slider -->
+    <div class="apple-slider">
+  <div class="apple-track">
+    <div class="apple-card"><img src="img/ds1.jpeg" alt=""><span>The Platinum Plate</span></div>
+    <div class="apple-card"><img src="img/sd2.jpeg" alt=""><span>The Platinum Plate+</span></div>
+    <div class="apple-card"><img src="img/sd3.jpeg" alt=""><span>The Platinum Plate</span></div>
+    <div class="apple-card"><img src="img/sd4.jpeg" alt=""><span>The Platinum Plate</span></div>
+    <div class="apple-card"><img src="img/sd5.jpeg" alt=""><span>The Platinum Plate</span></div>
 
-    <!-- Apple-Style Slider -->
-     <div class="card-slider" id="slider">
-    <div
-      style="
-        width: 100%;
-        overflow: hidden;
-        background: #ffffff;
-        padding: 30px 0;
-        box-sizing: border-box;
-      "
-    >
-      <!-- <div style="max-width:1200px; margin:0 auto; text-align:center; color:#fff;">
-    <h2 style="font-size:2.5rem; font-weight:600; margin-bottom:5px;">Curated Experiences</h2>
-    <p style="color:rgba(255,255,255,0.6); margin-bottom:40px;">Explore signature menus tailored for your next gathering.</p>
-  </div> -->
+    <!-- cloned for infinite loop -->
+    <div class="apple-card"><img src="img/ds1.jpeg" alt=""><span>The Platinum Plate</span></div>
+    <div class="apple-card"><img src="img/sd2.jpeg" alt=""><span>The Platinum Plate+</span></div>
+    <div class="apple-card"><img src="img/sd3.jpeg" alt=""><span>The Platinum Plate</span></div>
+    <div class="apple-card"><img src="img/sd4.jpeg" alt=""><span>The Platinum Plate</span></div>
+    <div class="apple-card"><img src="img/sd5.jpeg" alt=""><span>The Platinum Plate</span></div>
+  </div>
+</div>
+<script>
+  const track = document.querySelector(".apple-track");
 
-      <!-- Slider Container -->
-      <div
-        id="appleSlider"
-        style="
-          display: flex;
-          overflow-x: auto;
-          scroll-behavior: smooth;
-          -webkit-overflow-scrolling: touch;
-          scrollbar-width: none;
-        "
-        onwheel="this.scrollLeft += event.deltaY;"
-      >
-        <!-- Hide scrollbar -->
-        <style>
-          #appleSlider::-webkit-scrollbar {
-            display: none;
-          }
-        </style>
+track.addEventListener("mouseover", () => {
+  track.style.animationPlayState = "paused";
+});
 
-        <!-- Card 1 -->
-        <div
-          style="
-            flex: 0 0 auto;
-            width: 400px;
-            height: 200px;
-            border-radius: 0px;
-            margin: 0 10px;
-            overflow: hidden;
-            background: #ffffff;
-            position: relative;
-            transition: transform 0.7s ease;
-          "
-          onmouseover="this.style.transform='scale(1.03)';"
-          onmouseout="this.style.transform='scale(1)';"
-        >
-          <img
-            src="img/ds1.jpeg"
-            alt="The Platinum Plate"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 0px;
-            "
-          />
-          <div
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              color: #fff;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-weight: 600; font-size: 1.1rem"
-              >The Platinum Plate</span
-            >
-            <!-- <img src='img/apple-music-logo.png' alt='Apple Music' style='height:10px;'> -->
-          </div>
-        </div>
+track.addEventListener("mouseout", () => {
+  track.style.animationPlayState = "running";
+});
 
-        <!-- Card 2 -->
-        <div
-          style="
-            flex: 0 0 auto;
-            width: 400px;
-            height: 200px;
-            border-radius: 0px;
-            margin: 0 10px;
-            overflow: hidden;
-            background: #ffffff;
-            position: relative;
-            transition: transform 0.7s ease;
-          "
-          onmouseover="this.style.transform='scale(1.03)';"
-          onmouseout="this.style.transform='scale(1)';"
-        >
-          <img
-            src="img/sd2.jpeg"
-            alt="Balatro+"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 0px;
-            "
-          />
-          <div
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              color: #fff;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-weight: 600; font-size: 1.1rem"
-              >The Platinum Plate+</span
-            >
-            <!-- <img src='img/apple-arcade-logo.png' alt='Apple Arcade' style='height:10px;'> -->
-          </div>
-        </div>
+track.addEventListener("touchstart", () => {
+  track.style.animationPlayState = "paused";
+});
 
-        <!-- Card 3 -->
-        <div
-          style="
-            flex: 0 0 auto;
-            width: 400px;
-            height: 200px;
-            border-radius: 0px;
-            margin: 0 10px;
-            overflow: hidden;
-            background: #ffffff;
-            position: relative;
-            transition: transform 0.7s ease;
-          "
-          onmouseover="this.style.transform='scale(1.03)';"
-          onmouseout="this.style.transform='scale(1)';"
-        >
-          <img
-            src="img/sd3.jpeg"
-            alt="The Platinum Plate"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 0px;
-            "
-          />
-          <div
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              color: #fff;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-weight: 600; font-size: 1.1rem"
-              >The Platinum Plate</span
-            >
-            <!-- <img src='img/apple-music-logo.png' alt='Apple Music' style='height:10px;'> -->
-          </div>
-        </div>
+track.addEventListener("touchend", () => {
+  track.style.animationPlayState = "running";
+});
 
-        <!-- Card 4 -->
-        <div
-          style="
-            flex: 0 0 auto;
-            width: 400px;
-            height: 200px;
-            border-radius: 0px;
-            margin: 0 10px;
-            overflow: hidden;
-            background: #ffffff;
-            position: relative;
-            transition: transform 0.7s ease;
-          "
-          onmouseover="this.style.transform='scale(1.03)';"
-          onmouseout="this.style.transform='scale(1)';"
-        >
-          <img
-            src="img/sd4.jpeg"
-            alt="The Platinum Plate"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 0px;
-            "
-          />
-          <div
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              color: #fff;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-weight: 600; font-size: 1.1rem"
-              >The Platinum Plate</span
-            >
-            <!-- <img src='img/apple-music-logo.png' alt='Apple Music' style='height:10px;'> -->
-          </div>
-        </div>
-        <!-- Card 5 -->
-        <div
-          style="
-            flex: 0 0 auto;
-            width: 400px;
-            height: 200px;
-            border-radius: 0px;
-            margin: 0 10px;
-            overflow: hidden;
-            background: #ffffff;
-            position: relative;
-            transition: transform 0.7s ease;
-          "
-          onmouseover="this.style.transform='scale(1.03)';"
-          onmouseout="this.style.transform='scale(1)';"
-        >
-          <img
-            src="img/sd5.jpeg"
-            alt="The Platinum Plate"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 0px;
-            "
-          />
-          <div
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              right: 10px;
-              color: #fff;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-weight: 600; font-size: 1.1rem"
-              >The Platinum Plate</span
-            >
-            <!-- <img src='img/apple-music-logo.png' alt='Apple Music' style='height:10px;'> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <script>
-  const slider = document.getElementById("slider");
-
-  slider.addEventListener("mouseover", () => {
-    slider.style.animationPlayState = "paused";
-  });
-
-  slider.addEventListener("mouseout", () => {
-    slider.style.animationPlayState = "running";
-  });
-</script>
+  </script
 
 
     <!-- Audio Tag -->
